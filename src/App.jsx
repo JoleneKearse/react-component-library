@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Section from "./components/Section";
+import Badge from "./components/Badge/Badge";
+import BadgeContainer from "./components/Badge/BadgeContainer";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="site-header">
+        <h1 className="site-title">React Component Library</h1>
+        <nav className="site-nav">
+          <ul role="list">
+            <li><a href="#Badges" className="nav-link">Badges</a></li>
+            <li><a href="" className="nav-link">Banners</a></li>
+            <li><a href="" className="nav-link">Cards</a></li>
+            <li><a href="" className="nav-link">Testimonials</a></li>
+            <li><a href="" className="nav-link">Tooltips</a></li>
+            <li><a href="" className="nav-link">Toasts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <Section title="Badges" component={Badge}>
+          <BadgeContainer />
+        </Section>
+      </main>
     </>
   )
 }
