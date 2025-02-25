@@ -3,6 +3,7 @@ import Badge from "./components/Badge/Badge";
 import BadgeContainer from "./components/Badge/BadgeContainer";
 import Banner from "./components/Banner/Banner";
 import BannerContainer from "./components/Banner/BannerContainer";
+import Card from "./components/Card/Card";
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
         </Section>
         <Section title="Banners" component={Banner}>
           <BannerContainer />
+        </Section>
+        <Section title="Cards" component={Card}>
+          <Card cardImg="/cardIcon.svg" cardTitle="Easy Deployment" cardText="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." />
         </Section>
       </main>
     </>
