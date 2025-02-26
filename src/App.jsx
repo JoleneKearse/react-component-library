@@ -15,10 +15,10 @@ function App() {
           <ul role="list">
             <li><a href="#badges" className="nav-link">Badges</a></li>
             <li><a href="#banners" className="nav-link">Banners</a></li>
-            <li><a href="" className="nav-link">Cards</a></li>
-            <li><a href="" className="nav-link">Testimonials</a></li>
-            <li><a href="" className="nav-link">Tooltips</a></li>
-            <li><a href="" className="nav-link">Toasts</a></li>
+            <li><a href="#cards" className="nav-link">Cards</a></li>
+            <li><a href="#testimonials" className="nav-link">Testimonials</a></li>
+            <li><a href="#" className="nav-link">Tooltips</a></li>
+            <li><a href="#" className="nav-link">Toasts</a></li>
           </ul>
         </nav>
       </header>

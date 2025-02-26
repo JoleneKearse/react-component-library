@@ -10,6 +10,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  scroll-behavior: smooth;
 }
 
 body, h1, h2, h3, h4, p,
@@ -87,21 +88,25 @@ body {
 /* Layout */
 .site-header {
   min-height: 100vh;
+  height: 100vh;
   width: 100%;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  outline: 1px solid purple;
 }
 
 section {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 3rem;
   min-height: 50vh;
-  margin-top: 3rem;
+  padding-block: 3rem;
   outline: 1px solid black;
 }
 /* Components */
@@ -160,6 +165,7 @@ header ul {
   grid-template-rows: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
+  height: 50vh;
 }
 
 .banners {

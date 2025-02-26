@@ -1,5 +1,3 @@
-
-
 const Section = ({ title, children }) => {
   return (
     <section id={title.toLowerCase()} className="section-title">
